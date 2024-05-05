@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsha Clone</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+
+    <link rel="stylesheet" href="arsha.css" />
+  </head>
+  <body>
+    <header id="header" class="bg-header fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 text-light" href="#">ARSHA</a>
+          <button
+            id="navbarToggleBtn"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span id="toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#top-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                  <li class="dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="deepDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Deep Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="deepDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">Deep Drop Down 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Deep Drop Down 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Deep Drop Down 3</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Dropdown 3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Dropdown 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <a
+                href="#about"
+                id="navbarbtn"
+                class="btn btn-outline-info align-middle"
+                role="button"
+                style="border-radius: 18px"
+              >
+                Get Started
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--====First section=====-->
+    <section id="top-section" class="section1">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column order-lg-1 order-2 justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1 class="text-light">Better Solutions For Your Business</h1>
+            <h5>
+              We are team of talented designers making websites with Bootstrap
+            </h5>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a
+                href="#about"
+                role="button"
+                class="btn bt-lg text-light btn-info get-started"
+                >Get Started</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                class="btn video-btn"
+              >
+                <i class="bi bi-play-circle"></i
+                ><span class="text-light fs-5">Watch Video</span></a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 order-lg-2 order-1"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/img/hero-img.png"
+              class="animated img-fluid"
+              alt="hero image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!--=====clients section=====-->
+      <section id="clients">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="client"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-2.png"
+                class="client"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-3.png"
+                class="client"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-4.png"
+                class="client"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-5.png"
+                class="client"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-6.png"
+                class="client"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About section-->
+      <section id="about">
+        <div class="container d-flex flex-column" data-aos="fade-up">
+          <div>
+            <h2 class="section-heading">ABOUT US</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="list">
+                <li>
+                  <i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i> Duis aute irure dolor in
+                  reprehenderit in voluptate velit
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <a href="#" class="btn btn-lg btn-outline-info">
+                Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Why us section-->
+
+      <section id="why-us">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div>
+                <h3>
+                  Eum ipsam laborum deleniti
+                  <strong>velit pariatur architecto aut nihil</strong>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Duis aute irure dolor in reprehenderit
+                </p>
+              </div>
+              <div class="accordion" id="accordion-list">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-1"
+                      aria-expanded="true"
+                    >
+                      <span>01 </span> Non consectetur a erat nam at lectus urna
+                      duis?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-list-1"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordion-list"
+                  >
+                    <div class="accordion-body">
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                      id volutpat lacus laoreet non curabitur gravida.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      aria-expanded="false"
+                    >
+                      <span> 02</span> Feugiat scelerisque varius morbi enim
+                      nunc?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-list-2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion-list"
+                  >
+                    <div class="accordion-body">
+                      Dolor sit amet consectetur adipiscing elit pellentesque
+                      habitant morbi.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-3"
+                      aria-expanded="false"
+                    >
+                      <span>03 </span> Dolor sit amet consectetur adipiscing
+                      elit?
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-list-3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordion-list"
+                  >
+                    <div class="accordion-body">
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                      sagittis orci. Faucibus pulvinar elementum integer enim.
+                      Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                      tellus pellentesque eu tincidunt. Lectus urna duis
+                      convallis convallis tellus. Urna molestie at elementum eu
+                      facilisis sed odio morbi quis
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 order-1 order-lg-2 why-us-img"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+              style="
+                background-image: url('assets/img/why-us.png');
+                background-position: center;
+                background-size: cover;
+              "
+            >
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Skills section-->
+      <section id="skills">
+        <div class="comtainer">
+          <div class="row">
+            <div class="col-lg-6 col-10 mb-sm-3 mb-md-3">
+              <img
+                class="img-fluid"
+                src="assets/img/skills.png"
+                data-aos="fade-left"
+                data-aos-delay="150"
+                alt="skills earned"
+              />
+            </div>
+            <div
+              class="col-lg-6 col-10 skills-content"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <h3>
+                Voluptatem dignissimos provident quasi corporis voluptates
+              </h3>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="skills-show">
+                <div class="language">
+                  <span class="lang-type">HTMl</span>
+                  <span class="percent">100%</span>
+                  <div class="percentage-bar percent1"></div>
+                </div>
+                <div class="language">
+                  <span class="lang-type">Css</span
+                  ><span class="percent">90%</span>
+                  <div class="percentage-bar percent2"></div>
+                </div>
+                <div class="language">
+                  <span class="lang-type">JAVASCRIPT</span
+                  ><span class="percent">75%</span>
+                  <div class="percentage-bar percent3"></div>
+                </div>
+                <div class="language">
+                  <span class="lang-type">PHOTOSHOP</span
+                  ><span class="percent">55%</span>
+                  <div class="percentage-bar percent4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--====Services section====-->
+      <section id="services">
+        <div class="container" data-aos="fade-up" data-aos-delay="150">
+          <div class="section-title">
+            <h2 class="section-heading">Services</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 mt-3"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="service-box">
+                <div class="icon"></div>
+                <h4><a href="">Lorem Ipsum</a></h4>
+                <p>
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 mt-3"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="service-box">
+                <div class="icon"></div>
+                <h4><a href="">Sed ut perspici</a></h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 mt-3"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="service-box">
+                <div class="icon"></div>
+                <h4><a href="">Magni Dolores</a></h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 mt-3"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="service-box">
+                <div class="icon"></div>
+                <h4><a href="">Nemo Enim</a></h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---=======Cta section=======-->
+      <section id="call-to-action">
+        <div class="d-inline-flex center">
+          <div class="container">
+            <h3 class="text-light">Call To Action</h3>
+            <p class="text-light">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+          <button class="btn center">Call To Action</button>
+        </div>
+      </section>
+
+      <!--======Portfolio=====-->
+      <section id="portfolio">
+        <div class="section-title-p d-flex flex-column justify-content-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      console.log(screenSize);
+    </script>
+  </body>
+</html>

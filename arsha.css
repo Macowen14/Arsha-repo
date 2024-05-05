@@ -1,0 +1,44 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+section {
+  padding: 60px, 0;
+  overflow: hidden;
+}
+.section-heading {
+  text-align: center;
+  color: #37517e;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+#call-to-action {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url("assets/img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+#call-to-action button:hover {
+  background-color: #47b2e4;
+  border: #47b2e4;
+}
+/* 
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #4444441e;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #47b2e4;
+} */
