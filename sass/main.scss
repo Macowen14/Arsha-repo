@@ -1,115 +1,110 @@
+// Import variables
 @import "./variables.scss";
 
+// Function to generate gradient percentage
 @function percentage($got, $lack) {
-  @return (linear-gradient(to right, #37517e $got, #939494 $lack));
+  @return linear-gradient(to right, #37517e $got, #939494 $lack);
 }
 
+// Function to get color from variables
 @function COLOR($part) {
-  @return (map-get($map: $backgrounds, $key: $part));
+  @return map-get($map: $backgrounds, $key: $part);
 }
 
-.section-heading {
-  text-align: center;
-  color: COLOR(top-section);
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-.section-title {
-  .section-heading {
-    text-align: center;
-    color: COLOR(top-section);
-    font-weight: bold;
-    padding-bottom: 30px;
-  }
-  p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-}
-/*=====header styling===== */
+// Header styling
 #header {
   background-color: COLOR(header);
-}
 
-/* Navigation bar */
-.navbar {
-  padding: 1rem;
-  .nav-link {
-    color: white;
-    font-size: 1.1rem;
+  // Navigation bar
+  .navbar {
+    padding: 1rem;
 
-    :hover,
-    :focus {
+    .nav-link {
+      color: white;
+      font-size: 1.1rem;
+
+      &:hover,
+      &:focus {
+        color: COLOR(nav-link);
+      }
+    }
+
+    #{&}-toggler {
+      border: none;
+      outline: none;
+
+      #toggler-icon {
+        color: white;
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    // Active link styling
+    .nav-item.active .nav-link {
       color: COLOR(nav-link);
     }
   }
-  #{&}-toggler {
-    border: none;
-    outline: none;
-    #toggler-icon {
-      color: white;
-    }
-    :focus {
-      outline: none;
-      border: none;
-    }
-  }
-
-  /* Active link styling */
-  .nav-item.active .nav-link {
-    color: COLOR(nav-link);
-  }
 }
 
-/*==== top section styling=====*/
+// Top section styling
 .section1 {
   background-color: COLOR(top-section);
   padding: 60px;
+
   .video-btn .bi {
     font-size: 1.7rem;
     margin: 5px;
     color: white;
 
-    :hover {
+    &:hover {
       color: rgba(75, 226, 226, 0.911);
     }
   }
+
   h5 {
     color: #939494f3;
     font-size: medium;
   }
+
   .get-started {
     align-self: center;
     border-radius: 8px;
   }
+
+  // Animation
   @keyframes moveUpDown {
     0%,
     100% {
       transform: translateY(0);
-    } /* Start and end position */
+    }
     50% {
       transform: translateY(-10px);
-    } /* Middle position */
+    }
   }
 
-  /* Apply animation to the image */
   .animated {
-    animation: moveUpDown 3s ease-in-out infinite; /* Animation properties */
+    animation: moveUpDown 3s ease-in-out infinite;
   }
+
   @media (max-width: 768px) {
     .animated {
       animation: none;
     }
+
     .why-us-img {
       display: none;
     }
   }
 }
 
-/*==== clients section===== */
+// Clients section
 #clients {
   background-color: whitesmoke;
+
   .client {
     width: 110px;
     height: auto;
@@ -117,19 +112,22 @@
     transform: scale(1);
     transition: all 0.5s ease-in;
     filter: grayscale(100%);
-  }
-  .client:hover {
-    transform: scale(1.2);
-    filter: grayscale(0);
+
+    &:hover {
+      transform: scale(1.2);
+      filter: grayscale(0);
+    }
   }
 }
 
-/*=====about us======*/
+// About us section
 #about {
   padding: 50px;
+
   .list {
     list-style-type: none;
   }
+
   .bi-check2-circle {
     color: rgb(44, 180, 180);
     font-size: 20px;
@@ -139,14 +137,15 @@
     font-size: medium;
     border-radius: 4px;
     border: 2px solid;
-    :hover {
+
+    &:hover {
       color: white;
       border-radius: 4px;
     }
   }
 }
 
-/*==== why us styles ====*/
+// Why us section
 #why-us {
   padding: 80px;
   background-color: COLOR(section-different);
@@ -160,37 +159,44 @@
   .accordion-item {
     margin-top: 10px;
     margin-bottom: 20px;
+
     .accordion-header {
-      :hover {
+      &:hover {
         color: COLOR(button-hover);
       }
+
       span {
         font-weight: bold;
         font-size: 1.2rem;
         color: COLOR(button-hover);
       }
+
       .accordion-button {
         transition: color 0.3s ease;
+
         &:not(.collapsed) {
           color: Color(button-hover);
         }
+
         &.collapsed {
-          color: inherit; /* Default text color */
+          color: inherit;
         }
       }
     }
   }
 }
 
-/*===== Skills section=====*/
+// Skills section
 #skills {
   padding: 100px;
+
   .skills-content h3 {
     font-weight: 700;
     font-size: 32px;
     color: COLOR(top-section);
     font-family: "Poppins", sans-serif;
   }
+
   .language {
     display: flex;
     position: relative;
@@ -204,6 +210,7 @@
       left: 0;
       font-weight: bold;
     }
+
     .percent {
       position: absolute;
       right: 0;
@@ -211,6 +218,7 @@
       color: COLOR(top-section);
       font-size: small;
     }
+
     .percentage-bar {
       width: 100%;
       height: 10px;
@@ -218,41 +226,49 @@
       bottom: 0;
       border-radius: 0px;
     }
+
     .percent1 {
       background: percentage(100%, 0%);
     }
+
     .percent2 {
       background: percentage(90%, 10%);
     }
+
     .percent3 {
       background: percentage(75%, 25%);
     }
+
     .percent4 {
       background: percentage(55%, 45%);
     }
   }
 }
 
-/*====Services styles ===== */
+// Services section
 #services {
   background-color: COLOR(section-different);
   padding: 60px;
+
   .service-box {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     padding: 50px 30px;
     transition: all ease-in-out 0.4s;
     background: #fff;
 
-    :hover {
+    &:hover {
       transform: translateY(-10px);
+
       a {
         color: COLOR(btn-hover);
       }
     }
+
     h4 {
       font-weight: 500;
       margin-bottom: 15px;
       font-size: 24px;
+
       a {
         color: COLOR(top-section);
         transition: ease-in-out 0.3s;
@@ -262,7 +278,7 @@
   }
 }
 
-/*==== cta ====*/
+// Call to action section
 #call-to-action {
   padding: 120px 0;
 
@@ -281,22 +297,23 @@
     height: max-content;
     padding: 10px;
   }
+
   .container {
     max-width: 855px;
     margin-left: 80px;
   }
+
   h3 {
     font-size: 28px;
     font-weight: 700;
   }
 }
 
-/*====Portfolio====== */
-
+// Portfolio section
 #portfolio {
   padding: 30px;
-  .section-title-p {
-    @extend .section-title;
+
+  .section-title {
     p {
       padding: 10px;
     }
