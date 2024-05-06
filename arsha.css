@@ -26,10 +26,17 @@ section {
     url("assets/img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
+  color: white;
+  text-align: center;
+  height: 300px; /* Set a height if not already set */
 }
 #call-to-action button:hover {
   background-color: #47b2e4;
   border: #47b2e4;
+}
+.icon {
+  font-size: 50px;
+  color: #47b2e4;
 }
 /* 
 ::-webkit-scrollbar {
