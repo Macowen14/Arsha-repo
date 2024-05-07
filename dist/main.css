@@ -1,21 +1,29 @@
 #header {
   background-color: rgba(55, 81, 126, 0.8156862745);
+  height: 80px;
 }
 #header .navbar {
   padding: 1rem;
+}
+#header .navbar .dropdown-menu {
+  display: none;
+}
+#header .navbar .dropdown:hover .menu1 {
+  display: block;
 }
 #header .navbar .nav-link {
   color: white;
   font-size: 1.1rem;
 }
-#header .navbar #header .navbar-toggler {
+#header .navbar .nav-link .navbar-toggler {
   border: none;
   outline: none;
 }
-#header .navbar #header .navbar-toggler #toggler-icon {
-  color: white;
+#header .navbar .nav-link .navbar-toggler #toggler-icon i {
+  color: #fff;
+  font-size: 30px;
 }
-#header .navbar #header .navbar-toggler:focus {
+#header .navbar .nav-link .navbar-toggler:focus {
   outline: none;
   border: none;
 }
@@ -103,6 +111,11 @@
   font-weight: 400;
   font-size: 34px;
   color: #37517e;
+}
+@media (max-width: 728px) {
+  #why-us .why-us-img {
+    display: none;
+  }
 }
 #why-us .accordion-item {
   margin-top: 10px;

@@ -1,1 +1,68 @@
-/*# sourceMappingURL=portfolio-detail.css.map */
+.breadcrumbs {
+  margin-top: 80px;
+  background: #f3f5fa;
+}
+.breadcrumbs ol {
+  display: flex;
+  justify-content: flex-start;
+  font-size: small;
+  font-family: "Noto", sans-serif;
+}
+.breadcrumbs ol li {
+  margin: 5px;
+}
+.breadcrumbs .heading {
+  font-weight: 600;
+  color: #37517e;
+}
+
+.portfolio-details {
+  padding: 20px;
+}
+.portfolio-details .container {
+  max-width: 100%; /* Ensure the container doesn't exceed the width of the viewport */
+  padding-right: 15px; /* Add padding to the right side of the container to create some space */
+  padding-left: 15px; /* Add padding to the left side of the container to create some space */
+  margin-right: auto; /* Center the container horizontally */
+  margin-left: auto; /* Center the container horizontally */
+}
+.portfolio-details .portfolio-info {
+  margin: 20px, auto;
+  background-color: #f3f5fa;
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(55, 81, 126, 0.08);
+}
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  font-family: "Noto", sans-serif;
+}
+.portfolio-details .portfolio-info li {
+  font-size: 15px;
+}
+.portfolio-details .portfolio-description {
+  padding-top: 10px;
+}
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+#footer .news-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .news-letter h2 {
+  font-weight: 500;
+}
+#footer .news-letter p {
+  font-family: "Jost", sans-serif;
+}/*# sourceMappingURL=portfolio-detail.css.map */

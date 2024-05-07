@@ -1,0 +1,77 @@
+@import "./variables.scss";
+.breadcrumbs {
+  margin-top: 80px;
+  background: #f3f5fa;
+  ol {
+    display: flex;
+    justify-content: flex-start;
+    font-size: small;
+    font-family: "Noto", sans-serif;
+    li {
+      margin: 5px;
+    }
+  }
+  .heading {
+    font-weight: 600;
+    color: map-get($map: $backgrounds, $key: top-section);
+  }
+}
+
+//portfolio details
+.portfolio-details {
+  padding: 20px;
+
+  .container {
+    max-width: 100%; /* Ensure the container doesn't exceed the width of the viewport */
+    padding-right: 15px; /* Add padding to the right side of the container to create some space */
+    padding-left: 15px; /* Add padding to the left side of the container to create some space */
+    margin-right: auto; /* Center the container horizontally */
+    margin-left: auto; /* Center the container horizontally */
+  }
+
+  .portfolio-info {
+    margin: 20px, auto;
+    background-color: $light-bg;
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(55, 81, 126, 0.08);
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      font-family: "Noto", sans-serif;
+    }
+    li {
+      font-size: 15px;
+    }
+  }
+
+  .portfolio-description {
+    padding-top: 10px;
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    p {
+      padding: 0;
+    }
+  }
+}
+
+#footer {
+  .news-letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-weight: 500;
+    }
+    p {
+      font-family: "Jost", sans-serif;
+    }
+  }
+}

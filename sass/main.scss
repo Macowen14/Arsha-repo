@@ -14,10 +14,18 @@
 // Header styling
 #header {
   background-color: COLOR(header);
-
+  height: 80px;
   // Navigation bar
   .navbar {
     padding: 1rem;
+    .dropdown-menu {
+      display: none;
+    }
+    .dropdown:hover {
+      .menu1 {
+        display: block;
+      }
+    }
 
     .nav-link {
       color: white;
@@ -28,13 +36,15 @@
         color: COLOR(nav-link);
       }
     }
-
-    #{&}-toggler {
+    .nav-link .navbar-toggler {
       border: none;
       outline: none;
 
       #toggler-icon {
-        color: white;
+        i {
+          color: #fff;
+          font-size: 30px;
+        }
       }
 
       &:focus {
@@ -155,13 +165,17 @@
     font-size: 34px;
     color: COLOR(top-section);
   }
-
+  @media (max-width: 728px) {
+    .why-us-img {
+      display: none;
+    }
+  }
   .accordion-item {
     margin-top: 10px;
     margin-bottom: 20px;
 
     .accordion-header {
-      &:hover {
+      .accordion-header:hover {
         color: COLOR(button-hover);
       }
 
