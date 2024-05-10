@@ -12,53 +12,6 @@
 }
 
 // Header styling
-#header {
-  background-color: COLOR(header);
-  height: 80px;
-  // Navigation bar
-  .navbar {
-    padding: 1rem;
-    .dropdown-menu {
-      display: none;
-    }
-    .dropdown:hover {
-      .menu1 {
-        display: block;
-      }
-    }
-
-    .nav-link {
-      color: white;
-      font-size: 1.1rem;
-
-      &:hover,
-      &:focus {
-        color: COLOR(nav-link);
-      }
-    }
-    .nav-link .navbar-toggler {
-      border: none;
-      outline: none;
-
-      #toggler-icon {
-        i {
-          color: #fff;
-          font-size: 30px;
-        }
-      }
-
-      &:focus {
-        outline: none;
-        border: none;
-      }
-    }
-
-    // Active link styling
-    .nav-item.active .nav-link {
-      color: COLOR(nav-link);
-    }
-  }
-}
 
 // Top section styling
 .section1 {
