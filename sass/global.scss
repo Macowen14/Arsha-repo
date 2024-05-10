@@ -1,0 +1,152 @@
+@import "./variables.scss";
+
+@function COLOR($part) {
+  @return map-get($map: $backgrounds, $key: $part);
+}
+
+#header {
+  height: auto;
+  // Navigation bar
+  .navbar {
+    padding: 1rem;
+    background: COLOR(header);
+    .dropdown-menu {
+      display: none;
+    }
+    .dropdown:hover {
+      .menu1 {
+        display: block;
+      }
+    }
+
+    .nav-link {
+      color: white;
+      font-size: 1.1rem;
+
+      &:hover,
+      &:focus {
+        color: COLOR(nav-link);
+      }
+    }
+    .navbar-toggler {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      color: #fff;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    // Active link styling
+    .nav-item.active .nav-link {
+      color: COLOR(nav-link);
+    }
+  }
+}
+
+#footer {
+  background-color: $light-bg;
+  .news-letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-weight: 500;
+    }
+    p {
+      font-family: "Jost", sans-serif;
+    }
+    form {
+      margin-top: 30px;
+      background: #fff;
+      padding: 6px 15px;
+      position: relative;
+      border-radius: 50px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+      text-align: left;
+
+      .bi {
+        color: #47b2e4;
+      }
+      .form-control {
+        width: 400px;
+        padding: 4px 8px;
+        border-radius: 50px;
+
+        &:focus {
+          border-color: none;
+          outline: none;
+        }
+      }
+      .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0;
+        font-size: 16px;
+        padding: 0 15px;
+        background: #47b2e4;
+        color: #fff;
+        transition: 0.3s;
+        border-radius: 50px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .footer-top {
+    padding: 40px 20px;
+    h1,
+    h2,
+    h3,
+    h4 {
+      padding-bottom: 0;
+    }
+    .footer-contact {
+      h3 {
+        margin-bottom: 10px;
+        font-size: 28px;
+      }
+      p {
+        font-family: "Noto", sans-serif;
+        font-size: small;
+      }
+    }
+  }
+  a {
+    color: #37517e;
+    font-size: small;
+    &:hover {
+      color: #47b2e4;
+    }
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a > i {
+      padding: 5px;
+      margin: 10px;
+      font-size: x-large;
+      transition: all 0.3s;
+      color: #47b2e4;
+    }
+    a:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .footer-bottom {
+    background: COLOR(header);
+    text-align: center;
+    padding: 10px;
+    p {
+      color: #fff;
+    }
+    a {
+      color: #47b2e4;
+    }
+  }
+}

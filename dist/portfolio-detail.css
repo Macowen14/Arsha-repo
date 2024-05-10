@@ -16,6 +16,15 @@
   color: #37517e;
 }
 
+.carousel-indicators button {
+  border-radius: 50%;
+  background: #0abd22;
+}
+.carousel-indicators .active {
+  background-color: hsla(199, 67%, 53%, 0.992);
+  border-radius: 50%;
+}
+
 .portfolio-details {
   padding: 20px;
 }
@@ -53,16 +62,4 @@
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
-
-#footer .news-letter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#footer .news-letter h2 {
-  font-weight: 500;
-}
-#footer .news-letter p {
-  font-family: "Jost", sans-serif;
 }/*# sourceMappingURL=portfolio-detail.css.map */

@@ -1,4 +1,5 @@
 // Import variables
+@forward "./global.scss";
 @import "./variables.scss";
 
 // Function to generate gradient percentage
@@ -285,4 +286,81 @@
       padding: 10px;
     }
   }
+  .portfolio-img {
+    &:hover {
+      .portfolio-info {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    transition: all 0.6s;
+  }
+  .portfolio-info {
+    background-color: rgba(55, 81, 126, 0.8);
+    padding: 0 10px;
+    display: none;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    z-index: 3;
+    right: 15px;
+
+    h4,
+    p,
+    a {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .links {
+    font-size: 600;
+  }
 }
+
+// Team section
+#team {
+  background: $light-bg;
+  padding: 20px;
+  .section-title {
+    p {
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+  .pic img {
+    border-radius: 50%;
+    width: 150px;
+  }
+  .member {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    transition: all 0.3s;
+    h4 {
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 20px;
+      color: #37517e;
+    }
+    .member-info {
+      padding-left: 30px;
+      span {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $btn-hover;
+      }
+      p {
+        padding-top: 10px;
+      }
+      .social {
+        a {
+          font-size: larger;
+        }
+      }
+    }
+  }
+  .member:hover {
+    transform: translateY(-10px);
+  }
+}
+
+// footer
