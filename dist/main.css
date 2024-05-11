@@ -336,34 +336,45 @@
 #portfolio {
   padding: 30px;
 }
+#portfolio .filters button {
+  padding: 5px;
+  border-radius: 20px;
+  width: 50px;
+  margin: 8px;
+  border: none;
+}
+#portfolio .filters button:hover {
+  background-color: #47b2e4;
+}
 #portfolio .section-title p {
   padding: 10px;
 }
-#portfolio .portfolio-img {
-  transition: all 0.6s;
-}
-#portfolio .portfolio-img:hover .portfolio-info {
+#portfolio .portfolio-item:hover .portfolio-info {
+  margin-top: 9px;
   display: flex;
   justify-content: space-between;
 }
-#portfolio .portfolio-info {
-  background-color: rgba(55, 81, 126, 0.8);
+#portfolio .portfolio-item .portfolio-img img {
+  transition: transform 0.4s ease;
+}
+#portfolio .portfolio-item .portfolio-img:hover img {
+  transform: scale(1.05);
+}
+#portfolio .portfolio-item .portfolio-info {
+  background-color: rgba(55, 81, 126, 0.479);
   padding: 0 10px;
   display: none;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
-  z-index: 3;
-  right: 15px;
+  left: 0;
 }
-#portfolio .portfolio-info h4,
-#portfolio .portfolio-info p,
-#portfolio .portfolio-info a {
+#portfolio .portfolio-item .portfolio-info h4,
+#portfolio .portfolio-item .portfolio-info p,
+#portfolio .portfolio-item .portfolio-info a {
   padding: 0;
   margin: 0;
 }
-#portfolio .links {
-  font-size: 600;
+#portfolio .portfolio-item .links .bi {
+  font-size: 28px;
+  margin: 7px;
 }
 
 #team {
@@ -400,9 +411,153 @@
 #team .member .member-info p {
   padding-top: 10px;
 }
-#team .member .member-info .social a {
-  font-size: larger;
+#team .member .member-info .social {
+  transition: all 0.3s;
+}
+#team .member .member-info .social i {
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 5px;
+}
+#team .member .member-info .social a:hover i {
+  transform: translateY(-10px);
 }
 #team .member:hover {
   transform: translateY(-10px);
+}
+
+.pricing .ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+}
+.pricing .box {
+  display: flex column;
+  max-width: 85%;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  background: #fff;
+  border-top: 4px solid #fff;
+  border-radius: 5px;
+}
+.pricing .box h3 {
+  font-family: "Noto", sans-serif;
+  font-size: 20;
+  font-weight: 400;
+  color: #37517e;
+}
+.pricing .box h4 {
+  font-weight: 400;
+  font-size: 48px;
+  color: #37517e;
+}
+.pricing .box h4 sup {
+  font-size: 28px;
+}
+.pricing .box p {
+  color: #47b2e4;
+}
+.pricing .box .not-av {
+  text-decoration: line-through;
+  color: #999;
+}
+.pricing .buy-btn {
+  background: #47b2e4;
+  border-radius: 50px;
+  padding: 12px 35px;
+  border: 1px solid #47b2e4;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.pricing .bi-check {
+  color: green;
+  font-size: 500;
+}
+.pricing .featured {
+  border-top: 5px solid #47b2e4;
+}
+
+#faq {
+  background: #f3f5fa;
+  padding: 60px;
+  overflow: hidden;
+}
+#faq .fa-list {
+  max-width: 80%;
+}
+#faq .accordion {
+  margin: 15px auto;
+  display: flex column;
+  justify-content: center;
+}
+#faq .accordion-item {
+  margin: 20px;
+}
+#faq .accordion-button:focus {
+  outline: none;
+  border-color: none;
+  border: none;
+}
+#faq .accordion-header button.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #47b2e4;
+}
+#faq .accordion-button span {
+  margin-left: 30px;
+}
+#faq .accordion-button .bi {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+}
+
+.contact {
+  padding: 30px;
+}
+.contact .info, .contact form {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+.contact .info .bi, .contact form .bi {
+  font-size: 20px;
+  color: #47b2e4;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+}
+.contact .info h4, .contact form h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+.contact .info p, .contact form p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+.contact form {
+  padding: 20px;
+  height: 100%;
+}
+.contact form .form-group,
+.contact form .row {
+  margin: 20px;
 }/*# sourceMappingURL=main.css.map */
