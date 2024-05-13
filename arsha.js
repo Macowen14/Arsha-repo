@@ -1,45 +1,36 @@
-// Function to toggle the icon
-function toggleIcon() {
-  var icon = document.querySelector(".navbar-toggler .toggler-icon i");
-  // Toggle between menu and cancel icons
-  if (icon.classList.contains("fa-bars")) {
-    icon.classList.remove("fa-bars", "fa-solid");
-    icon.classList.add("fa-solid", "fa-xmark-large");
-  } else {
-    icon.classList.remove("fa-solid", "fa-xmark-large");
-    icon.classList.add("fa-bars", "fa-solid");
-  }
-}
+// loader
+window.addEventListener("load", () => {
+  var loader = document.getElementById("preloader");
+  loader.style.display = "none";
+});
 
+// Function to toggle the icon
+
+// filtering in the portfolio
 document.addEventListener("DOMContentLoaded", () => {
   const portfolioItems = document.querySelectorAll(".portfolio-item");
+  const buttons = document.querySelectorAll(".filters button");
 
-  // Function to filter portfolio items based on category
-  function filterItems(category) {
-    portfolioItems.forEach(function (item) {
-      if (category === "*" || item.classList.contains(category)) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  }
-
-  // Add click event listeners to filter buttons
-  const filterButtons = document.querySelectorAll(".filters li");
-  filterButtons.forEach(function (button) {
+  buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      const category = this.getAttribute("data-filter");
-      filterItems(category);
+      // Remove active class from all buttons and then add to the clicked one
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      // Get the filter value from data-filter attribute
+      const filterValue = button.getAttribute("data-filter");
+      console.log("Filter value:", filterValue);
+
+      // Loop through all portfolio items to show or hide them
+      portfolioItems.forEach((item) => {
+        if (filterValue === "*" || item.classList.contains(filterValue)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
+});
 
-  // Add click event listener to close image viewer
-  const closeButtons = document.querySelectorAll(".close-btn");
-  closeButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      const imageViewer = document.querySelector(".image-viewer");
-      imageViewer.style.display = "none";
-    });
-  });
-
+//

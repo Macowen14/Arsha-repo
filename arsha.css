@@ -44,10 +44,7 @@ section {
     text-align: center;
   }
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: hsla(199, 67%, 53%, 0.992);
-}
+
 #call-to-action {
   background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
     url("assets/img/cta-bg.jpg") fixed center center;
@@ -66,20 +63,25 @@ section {
   font-size: 50px;
   color: #47b2e4;
 }
+.active {
+  background-color: #47b2e4;
+  color: #fff;
+  font-weight: bold;
+}
 
 /* loader to be shown on page loading*/
 
-#loader-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader {
@@ -89,10 +91,6 @@ section {
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
-}
-
-.content {
-  display: none; /* Hide content initially */
 }
 
 @keyframes spin {

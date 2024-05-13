@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
@@ -22,9 +23,14 @@
     />
     <link rel="stylesheet" href="arsha.css" />
     <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="./dist/global.css">
   </head>
   <body>
-    <header id="header" class="bg-header fixed-top">
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    
+      <header id="header" class="bg-header fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand fs-2 text-light" href="#">ARSHA</a>
@@ -557,10 +563,10 @@
           </p>
         </div>
         <div class="filters d-flex justify-content-center" data-aos="fade-up" data-aos-delay="150">
-          <button class="filter-btn">All</button>
-          <button class="filter-app-btn">App</button>
-          <button class="filter-web-btn">Web</button>
-          <button class="filter-card-btn">Card</button>
+          <button  data-filter="*">All</button>
+          <button data-filter="filter-app">App</button>
+          <button data-filter="filter-web" >Web</button>
+          <button  data-filter="filter-card" >Card</button>
         </div>
         <div class="row">
             <div class="portfolio-item col-lg-4 col-md-6 filter-app">
@@ -597,7 +603,7 @@
             </div>
           </div>
 
-          <div class="portfolio-item col-lg-4 col-md-6 filtr-card">
+          <div class="portfolio-item col-lg-4 col-md-6 filter-card">
             <div class="portfolio-img">
               <img src="./assets/img/portfolio/portfolio-5.jpg" alt="" class="img-fluid" >
             </div>
@@ -610,13 +616,13 @@
                 <a href="portfolio details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a></div>  
             </div>
           </div>
-          <div class="portfolio-item col-lg-4  col-md-6 filter-app">
+          <div class="portfolio-item col-lg-4  col-md-6 filter-web">
             <div class="portfolio-img">
               <img src="./assets/img/portfolio/portfolio-6.jpg" alt="" class="img-fluid" >
             </div>
             <div class="portfolio-info">
-              <div class="decription"> <h4>App </h4>
-                <p>App</p></div>
+              <div class="decription"> <h4>Web 2</h4>
+                <p>Web</p></div>
                 <div class="links"><a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"  title="Web 3"><i class="bi bi-plus"></i></a>
                 <a href="portfolio details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a></div>
             </div>
@@ -1073,6 +1079,7 @@
         
       </div>
     </footer>
+  
     <script src="arsha.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

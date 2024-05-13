@@ -1,27 +1,28 @@
-.breadcrumbs {
+#breadcrumb {
   margin-top: 80px;
   background: #f3f5fa;
 }
-.breadcrumbs ol {
+#breadcrumb .breadcrumb {
   display: flex;
   justify-content: flex-start;
   font-size: small;
   font-family: "Noto", sans-serif;
 }
-.breadcrumbs ol li {
+#breadcrumb .breadcrumb .breadcrumb-item {
   margin: 5px;
 }
-.breadcrumbs .heading {
+#breadcrumb .heading {
   font-weight: 600;
   color: #37517e;
 }
 
 .carousel-indicators button {
   border-radius: 50%;
-  background: #0abd22;
+  height: 50px;
+  width: 50px;
 }
 .carousel-indicators .active {
-  background-color: hsla(199, 67%, 53%, 0.992);
+  background-color: #3751de;
   border-radius: 50%;
 }
 
