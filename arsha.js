@@ -43,18 +43,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Add click event listener to open image viewer
-  const imageLinks = document.querySelectorAll(
-    ".portfolio-info a[data-gallery]"
-  );
-  imageLinks.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const imageUrl = this.getAttribute("href");
-      const imageViewer = document.querySelector(".image-viewer");
-      const imageView = imageViewer.querySelector(".image-view");
-      imageView.setAttribute("src", imageUrl);
-      imageViewer.style.display = "block";
-    });
-  });
-});
