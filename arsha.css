@@ -52,7 +52,7 @@ section {
   padding: 120px 0;
   color: white;
   text-align: center;
-  height: 300px; /* Set a height if not already set */
+  height: 300px;
 }
 
 #call-to-action button:hover {
