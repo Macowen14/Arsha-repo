@@ -5,7 +5,7 @@
 }
 
 #header {
-  height: auto;
+  max-height: fit-content;
   // Navigation bar
   .navbar {
     padding: 1rem;

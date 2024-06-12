@@ -1,5 +1,6 @@
 #header {
-  height: auto;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 #header .navbar {
   padding: 1rem;
